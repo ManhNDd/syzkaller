@@ -1,0 +1,4 @@
+
+custom_func_grantpt(fd fd)
+custom_func_ptsname_r(fd fd, buf buffer[out], count len[buf])
+custom_func_cfmakeraw(termios_p ptr[out, termios])

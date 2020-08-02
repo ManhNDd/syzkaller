@@ -1,0 +1,3 @@
+__NR_custom_func_grantpt = 1000
+__NR_custom_func_ptsname_r = 1001
+__NR_custom_func_cfmakeraw = 1002
