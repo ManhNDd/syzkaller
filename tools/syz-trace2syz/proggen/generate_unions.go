@@ -6,9 +6,9 @@
 package proggen
 
 import (
-	"github.com/google/syzkaller/pkg/log"
-	"github.com/google/syzkaller/prog"
-	"github.com/google/syzkaller/tools/syz-trace2syz/parser"
+	"github.com/ManhNDd/syzkaller/pkg/log"
+	"github.com/ManhNDd/syzkaller/prog"
+	"github.com/ManhNDd/syzkaller/tools/syz-trace2syz/parser"
 )
 
 func (ctx *context) genSockaddrStorage(syzType *prog.UnionType, dir prog.Dir, straceType parser.IrType) prog.Arg {

@@ -23,7 +23,7 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/google/syzkaller/dashboard/dashapi"
+	"github.com/ManhNDd/syzkaller/dashboard/dashapi"
 	"golang.org/x/net/context"
 	"google.golang.org/appengine"
 	"google.golang.org/appengine/aetest"

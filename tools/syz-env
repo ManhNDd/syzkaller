@@ -6,7 +6,7 @@
 # which includes all tools necessary to develop/test syzkaller.
 # It's recommended to create an alias for this script:
 #
-#	alias syz-env="$(go env GOPATH)/src/github.com/google/syzkaller/tools/syz-env"
+#	alias syz-env="$(go env GOPATH)/src/github.com/ManhNDd/syzkaller/tools/syz-env"
 #
 # Then it can be used to wrap almost any make invocation as:
 #
@@ -55,10 +55,10 @@ fi
 # Run everything as the host user, this is important for created/modified files.
 docker run \
 	--user $(id -u ${USER}):$(id -g ${USER}) \
-	--volume "$SCRIPT_DIR/..:/syzkaller/gopath/src/github.com/google/syzkaller" \
+	--volume "$SCRIPT_DIR/..:/syzkaller/gopath/src/github.com/ManhNDd/syzkaller" \
 	--volume "$HOME/.cache:/syzkaller/.cache" \
 	--volume "/var/run/docker.sock":"/var/run/docker.sock" \
-	--workdir /syzkaller/gopath/src/github.com/google/syzkaller \
+	--workdir /syzkaller/gopath/src/github.com/ManhNDd/syzkaller \
 	--env HOME=/syzkaller \
 	--env GOPATH=/syzkaller/gopath:/gopath \
 	--env FUZZIT_API_KEY \

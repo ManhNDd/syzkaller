@@ -7,7 +7,7 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/google/syzkaller/dashboard/dashapi"
+	"github.com/ManhNDd/syzkaller/dashboard/dashapi"
 )
 
 func TestCommitPoll(t *testing.T) {

@@ -6,7 +6,7 @@ package report
 import (
 	"fmt"
 
-	"github.com/google/syzkaller/pkg/mgrconfig"
+	"github.com/ManhNDd/syzkaller/pkg/mgrconfig"
 )
 
 func Fuzz(data []byte) int {

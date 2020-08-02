@@ -30,11 +30,11 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/google/syzkaller/pkg/build"
-	"github.com/google/syzkaller/pkg/instance"
-	"github.com/google/syzkaller/pkg/mgrconfig"
-	"github.com/google/syzkaller/pkg/osutil"
-	"github.com/google/syzkaller/pkg/vcs"
+	"github.com/ManhNDd/syzkaller/pkg/build"
+	"github.com/ManhNDd/syzkaller/pkg/instance"
+	"github.com/ManhNDd/syzkaller/pkg/mgrconfig"
+	"github.com/ManhNDd/syzkaller/pkg/osutil"
+	"github.com/ManhNDd/syzkaller/pkg/vcs"
 )
 
 var (

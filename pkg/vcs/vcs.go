@@ -14,8 +14,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/google/syzkaller/dashboard/dashapi"
-	"github.com/google/syzkaller/pkg/osutil"
+	"github.com/ManhNDd/syzkaller/dashboard/dashapi"
+	"github.com/ManhNDd/syzkaller/pkg/osutil"
 )
 
 type RecipientType int
@@ -277,7 +277,7 @@ var commitPrefixes = []string{
 	"net-backports:",
 }
 
-const SyzkallerRepo = "https://github.com/google/syzkaller"
+const SyzkallerRepo = "https://github.com/ManhNDd/syzkaller"
 
 func CommitLink(url, hash string) string {
 	return link(url, hash, 0)

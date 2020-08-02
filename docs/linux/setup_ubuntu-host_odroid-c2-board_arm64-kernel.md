@@ -293,7 +293,7 @@ Use the following config:
 	"http": "127.0.0.1:56741",
 	"workdir": "/syzkaller/workdir",
 	"kernel_obj": "/linux-next",
-	"syzkaller": "/go/src/github.com/google/syzkaller",
+	"syzkaller": "/go/src/github.com/ManhNDd/syzkaller",
 	"sshkey": "/odroid/ssh/id_rsa",
 	"rpc": "172.16.0.30:0",
 	"sandbox": "namespace",

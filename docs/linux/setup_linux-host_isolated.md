@@ -77,7 +77,7 @@ Use the following config:
 	"sshkey" : "/path/to/optional/sshkey",
 	"workdir": "/syzkaller/workdir",
 	"kernel_obj": "/linux-next",
-	"syzkaller": "/go/src/github.com/google/syzkaller",
+	"syzkaller": "/go/src/github.com/ManhNDd/syzkaller",
 	"sandbox": "setuid",
 	"type": "isolated",
 	"vm": {

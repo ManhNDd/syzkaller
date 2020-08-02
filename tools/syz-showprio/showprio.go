@@ -11,9 +11,9 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/google/syzkaller/pkg/db"
-	"github.com/google/syzkaller/pkg/mgrconfig"
-	"github.com/google/syzkaller/prog"
+	"github.com/ManhNDd/syzkaller/pkg/db"
+	"github.com/ManhNDd/syzkaller/pkg/mgrconfig"
+	"github.com/ManhNDd/syzkaller/prog"
 )
 
 var (

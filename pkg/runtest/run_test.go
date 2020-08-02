@@ -10,11 +10,11 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/google/syzkaller/pkg/csource"
-	"github.com/google/syzkaller/pkg/host"
-	"github.com/google/syzkaller/prog"
-	"github.com/google/syzkaller/sys/targets"
-	_ "github.com/google/syzkaller/sys/test/gen" // pull in the test target
+	"github.com/ManhNDd/syzkaller/pkg/csource"
+	"github.com/ManhNDd/syzkaller/pkg/host"
+	"github.com/ManhNDd/syzkaller/prog"
+	"github.com/ManhNDd/syzkaller/sys/targets"
+	_ "github.com/ManhNDd/syzkaller/sys/test/gen" // pull in the test target
 )
 
 // Can be used as:

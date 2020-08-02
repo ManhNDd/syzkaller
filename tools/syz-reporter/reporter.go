@@ -24,9 +24,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/google/syzkaller/pkg/html"
-	"github.com/google/syzkaller/pkg/mgrconfig"
-	"github.com/google/syzkaller/pkg/osutil"
+	"github.com/ManhNDd/syzkaller/pkg/html"
+	"github.com/ManhNDd/syzkaller/pkg/mgrconfig"
+	"github.com/ManhNDd/syzkaller/pkg/osutil"
 )
 
 var (

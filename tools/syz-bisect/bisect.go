@@ -28,10 +28,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/google/syzkaller/pkg/bisect"
-	"github.com/google/syzkaller/pkg/config"
-	"github.com/google/syzkaller/pkg/mgrconfig"
-	"github.com/google/syzkaller/pkg/osutil"
+	"github.com/ManhNDd/syzkaller/pkg/bisect"
+	"github.com/ManhNDd/syzkaller/pkg/config"
+	"github.com/ManhNDd/syzkaller/pkg/mgrconfig"
+	"github.com/ManhNDd/syzkaller/pkg/osutil"
 )
 
 var (

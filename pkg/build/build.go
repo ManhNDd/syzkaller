@@ -13,9 +13,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/google/syzkaller/pkg/osutil"
-	"github.com/google/syzkaller/pkg/report"
-	"github.com/google/syzkaller/pkg/vcs"
+	"github.com/ManhNDd/syzkaller/pkg/osutil"
+	"github.com/ManhNDd/syzkaller/pkg/report"
+	"github.com/ManhNDd/syzkaller/pkg/vcs"
 )
 
 // Params is input arguments for the Image function.

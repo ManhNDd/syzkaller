@@ -11,7 +11,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/google/syzkaller/pkg/log"
+	"github.com/ManhNDd/syzkaller/pkg/log"
 )
 
 func parseSyscall(scanner *bufio.Scanner) (int, *Syscall) {

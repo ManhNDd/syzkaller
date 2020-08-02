@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"math/rand"
 
-	"github.com/google/syzkaller/prog"
-	_ "github.com/google/syzkaller/sys/test/gen" // import the target we use for fuzzing
+	"github.com/ManhNDd/syzkaller/prog"
+	_ "github.com/ManhNDd/syzkaller/sys/test/gen" // import the target we use for fuzzing
 )
 
 func FuzzDeserialize(data []byte) int {

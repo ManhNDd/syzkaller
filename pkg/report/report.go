@@ -12,9 +12,9 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/google/syzkaller/pkg/mgrconfig"
-	"github.com/google/syzkaller/pkg/vcs"
-	"github.com/google/syzkaller/sys/targets"
+	"github.com/ManhNDd/syzkaller/pkg/mgrconfig"
+	"github.com/ManhNDd/syzkaller/pkg/vcs"
+	"github.com/ManhNDd/syzkaller/sys/targets"
 )
 
 type Reporter interface {

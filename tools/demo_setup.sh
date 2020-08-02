@@ -38,8 +38,8 @@ chmod 0600 wheezy.img.key
 mkdir workdir
 mv corpus.db workdir/
 
-go get -d github.com/google/syzkaller/...
-(cd $GOPATH/src/github.com/google/syzkaller; \
+go get -d github.com/ManhNDd/syzkaller/...
+(cd $GOPATH/src/github.com/ManhNDd/syzkaller; \
     git checkout ad7d294798bac1b8da37cf303e44ade90689bb1c; \
     make; \
 )
@@ -56,7 +56,7 @@ cat <<'EOF' | sed "s#DIR#$DIR#g" | sed "s#NVM#$NVM#g" > config
     "http": ":20000",
     "workdir": "DIR/workdir",
     "vmlinux": "DIR/linux/vmlinux",
-    "syzkaller": "DIR/gopath/src/github.com/google/syzkaller",
+    "syzkaller": "DIR/gopath/src/github.com/ManhNDd/syzkaller",
     "image": "DIR/wheezy.img",
     "sshkey": "DIR/wheezy.img.key",
     "sandbox": "none",
@@ -71,4 +71,4 @@ cat <<'EOF' | sed "s#DIR#$DIR#g" | sed "s#NVM#$NVM#g" > config
 }
 EOF
 
-gopath/src/github.com/google/syzkaller/bin/syz-manager -config config
+gopath/src/github.com/ManhNDd/syzkaller/bin/syz-manager -config config

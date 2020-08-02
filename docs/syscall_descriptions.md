@@ -47,7 +47,7 @@ This section describes how to extend syzkaller to allow fuzz testing of more ker
 This is particularly useful for kernel developers who are proposing new system calls.
 
 Currently all syscall descriptions are manually-written. There is an
-[open issue](https://github.com/google/syzkaller/issues/590) to provide some aid
+[open issue](https://github.com/ManhNDd/syzkaller/issues/590) to provide some aid
 for this process and some ongoing work, but we are not there yet to have a
 fully-automated way to generate descriptions.
 There is a helper [headerparser](headerparser_usage.md) utility that can auto-generate
@@ -172,7 +172,7 @@ Syscall arguments are always `in`, return values are `out` and pointer indirecti
 have explicit direction as `ptr` type attribute. Note: for pointer indirections
 the direction applies to the whole pointee, and it's not possible to specify the
 direction individually for struct fields at the moment
-(see [#245](https://github.com/google/syzkaller/issues/245)).
+(see [#245](https://github.com/ManhNDd/syzkaller/issues/245)).
 
 <div id="values"/>
 

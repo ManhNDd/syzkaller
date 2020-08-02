@@ -171,7 +171,7 @@ A single incorrect decision during bisection leads to an incorrect result,
 so please treat the results with understanding. You may consult the provided
 `bisection log` to see how/why `syzbot` has arrived to a particular commit.
 Suggestions and patches that improve bisection quality for common cases are
-[welcome](https://github.com/google/syzkaller/issues/1051).
+[welcome](https://github.com/ManhNDd/syzkaller/issues/1051).
 
 `syzbot` supports cause bisection (find the commit that introduces a bug) and
 fix bisection (find the commit that fixes a bug).

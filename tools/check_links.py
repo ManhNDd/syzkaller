@@ -28,7 +28,7 @@ errors = []
 
 for link in links:
 	(doc, link, line, col) = link
-	for prefix in ['https://github.com/google/syzkaller/blob/master', 'https://github.com/google/syzkaller/tree/master']:
+	for prefix in ['https://github.com/ManhNDd/syzkaller/blob/master', 'https://github.com/ManhNDd/syzkaller/tree/master']:
 		if link.startswith(prefix):
 			errors += ['%s:%d:%d: Replace absolute link with %s.' % (doc, line, col, link[len(prefix):])]
 

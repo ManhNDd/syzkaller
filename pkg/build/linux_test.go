@@ -13,7 +13,7 @@ import (
 	"testing"
 	"text/template"
 
-	"github.com/google/syzkaller/pkg/osutil"
+	"github.com/ManhNDd/syzkaller/pkg/osutil"
 )
 
 func TestElfBinarySignature(t *testing.T) {

@@ -4,8 +4,8 @@
 package trusty
 
 import (
-	"github.com/google/syzkaller/prog"
-	"github.com/google/syzkaller/sys/targets"
+	"github.com/ManhNDd/syzkaller/prog"
+	"github.com/ManhNDd/syzkaller/sys/targets"
 )
 
 func InitTarget(target *prog.Target) {

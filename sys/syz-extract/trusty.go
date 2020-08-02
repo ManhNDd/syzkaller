@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/google/syzkaller/pkg/compiler"
+	"github.com/ManhNDd/syzkaller/pkg/compiler"
 )
 
 type trusty struct{}

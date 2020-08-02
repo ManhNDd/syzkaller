@@ -16,9 +16,9 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/google/syzkaller/pkg/log"
-	"github.com/google/syzkaller/pkg/osutil"
-	"github.com/google/syzkaller/prog"
+	"github.com/ManhNDd/syzkaller/pkg/log"
+	"github.com/ManhNDd/syzkaller/pkg/osutil"
+	"github.com/ManhNDd/syzkaller/prog"
 )
 
 func isSupported(c *prog.Syscall, target *prog.Target, sandbox string) (bool, string) {

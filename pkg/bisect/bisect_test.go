@@ -11,11 +11,11 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/google/syzkaller/pkg/hash"
-	"github.com/google/syzkaller/pkg/instance"
-	"github.com/google/syzkaller/pkg/mgrconfig"
-	"github.com/google/syzkaller/pkg/report"
-	"github.com/google/syzkaller/pkg/vcs"
+	"github.com/ManhNDd/syzkaller/pkg/hash"
+	"github.com/ManhNDd/syzkaller/pkg/instance"
+	"github.com/ManhNDd/syzkaller/pkg/mgrconfig"
+	"github.com/ManhNDd/syzkaller/pkg/report"
+	"github.com/ManhNDd/syzkaller/pkg/vcs"
 )
 
 // testEnv will implement instance.BuilderTester. This allows us to

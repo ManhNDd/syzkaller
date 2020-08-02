@@ -13,16 +13,16 @@ import (
 	"strings"
 	"time"
 
-	"github.com/google/syzkaller/dashboard/dashapi"
-	"github.com/google/syzkaller/pkg/bisect"
-	"github.com/google/syzkaller/pkg/build"
-	"github.com/google/syzkaller/pkg/instance"
-	"github.com/google/syzkaller/pkg/log"
-	"github.com/google/syzkaller/pkg/mgrconfig"
-	"github.com/google/syzkaller/pkg/osutil"
-	"github.com/google/syzkaller/pkg/report"
-	"github.com/google/syzkaller/pkg/vcs"
-	"github.com/google/syzkaller/vm"
+	"github.com/ManhNDd/syzkaller/dashboard/dashapi"
+	"github.com/ManhNDd/syzkaller/pkg/bisect"
+	"github.com/ManhNDd/syzkaller/pkg/build"
+	"github.com/ManhNDd/syzkaller/pkg/instance"
+	"github.com/ManhNDd/syzkaller/pkg/log"
+	"github.com/ManhNDd/syzkaller/pkg/mgrconfig"
+	"github.com/ManhNDd/syzkaller/pkg/osutil"
+	"github.com/ManhNDd/syzkaller/pkg/report"
+	"github.com/ManhNDd/syzkaller/pkg/vcs"
+	"github.com/ManhNDd/syzkaller/vm"
 )
 
 const (

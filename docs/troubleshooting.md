@@ -23,6 +23,6 @@ Here are some things to check if there are problems running syzkaller.
 
 Also see [this](linux/troubleshooting.md) for Linux kernel specific troubleshooting advice.
 
-If none of the above helps, file a bug on [the bug tracker](https://github.com/google/syzkaller/issues)
+If none of the above helps, file a bug on [the bug tracker](https://github.com/ManhNDd/syzkaller/issues)
 or ask us directly on the syzkaller@googlegroups.com mailing list.
 Please include syzkaller commit id that you use and `syz-manager` output with `-debug` flag enabled if applicable.

@@ -14,15 +14,15 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/google/syzkaller/pkg/csource"
-	"github.com/google/syzkaller/pkg/db"
-	"github.com/google/syzkaller/pkg/host"
-	"github.com/google/syzkaller/pkg/ipc"
-	"github.com/google/syzkaller/pkg/ipc/ipcconfig"
-	"github.com/google/syzkaller/pkg/log"
-	"github.com/google/syzkaller/pkg/mgrconfig"
-	"github.com/google/syzkaller/prog"
-	_ "github.com/google/syzkaller/sys"
+	"github.com/ManhNDd/syzkaller/pkg/csource"
+	"github.com/ManhNDd/syzkaller/pkg/db"
+	"github.com/ManhNDd/syzkaller/pkg/host"
+	"github.com/ManhNDd/syzkaller/pkg/ipc"
+	"github.com/ManhNDd/syzkaller/pkg/ipc/ipcconfig"
+	"github.com/ManhNDd/syzkaller/pkg/log"
+	"github.com/ManhNDd/syzkaller/pkg/mgrconfig"
+	"github.com/ManhNDd/syzkaller/prog"
+	_ "github.com/ManhNDd/syzkaller/sys"
 )
 
 var (

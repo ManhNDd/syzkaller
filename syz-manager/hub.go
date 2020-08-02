@@ -6,13 +6,13 @@ package main
 import (
 	"time"
 
-	"github.com/google/syzkaller/pkg/hash"
-	"github.com/google/syzkaller/pkg/host"
-	"github.com/google/syzkaller/pkg/log"
-	"github.com/google/syzkaller/pkg/mgrconfig"
-	"github.com/google/syzkaller/pkg/report"
-	"github.com/google/syzkaller/pkg/rpctype"
-	"github.com/google/syzkaller/prog"
+	"github.com/ManhNDd/syzkaller/pkg/hash"
+	"github.com/ManhNDd/syzkaller/pkg/host"
+	"github.com/ManhNDd/syzkaller/pkg/log"
+	"github.com/ManhNDd/syzkaller/pkg/mgrconfig"
+	"github.com/ManhNDd/syzkaller/pkg/report"
+	"github.com/ManhNDd/syzkaller/pkg/rpctype"
+	"github.com/ManhNDd/syzkaller/prog"
 )
 
 func (mgr *Manager) hubSyncLoop() {

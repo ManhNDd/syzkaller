@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/google/syzkaller/pkg/osutil"
+	"github.com/ManhNDd/syzkaller/pkg/osutil"
 )
 
 const (

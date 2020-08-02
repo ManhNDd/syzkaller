@@ -17,9 +17,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/google/syzkaller/pkg/osutil"
-	"github.com/google/syzkaller/pkg/symbolizer"
-	"github.com/google/syzkaller/sys/targets"
+	"github.com/ManhNDd/syzkaller/pkg/osutil"
+	"github.com/ManhNDd/syzkaller/pkg/symbolizer"
+	"github.com/ManhNDd/syzkaller/sys/targets"
 )
 
 type ReportGenerator struct {

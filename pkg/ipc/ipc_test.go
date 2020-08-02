@@ -12,12 +12,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/google/syzkaller/pkg/csource"
-	. "github.com/google/syzkaller/pkg/ipc"
-	"github.com/google/syzkaller/pkg/ipc/ipcconfig"
-	"github.com/google/syzkaller/pkg/osutil"
-	"github.com/google/syzkaller/prog"
-	_ "github.com/google/syzkaller/sys"
+	"github.com/ManhNDd/syzkaller/pkg/csource"
+	. "github.com/ManhNDd/syzkaller/pkg/ipc"
+	"github.com/ManhNDd/syzkaller/pkg/ipc/ipcconfig"
+	"github.com/ManhNDd/syzkaller/pkg/osutil"
+	"github.com/ManhNDd/syzkaller/prog"
+	_ "github.com/ManhNDd/syzkaller/sys"
 )
 
 const timeout = 10 * time.Second

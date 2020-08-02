@@ -17,7 +17,7 @@
 
 FROM debian:buster
 
-LABEL homepage="https://github.com/google/syzkaller"
+LABEL homepage="https://github.com/ManhNDd/syzkaller"
 
 RUN dpkg --add-architecture i386 && \
 	apt-get update && \
@@ -40,12 +40,12 @@ ENV GOPATH /gopath
 # This is necessary to make docker work with the current user,
 # otherwise --volume will create these dirs under root and then
 # the current user won't have access to them.
-RUN mkdir -p /syzkaller/gopath/src/github.com/google/syzkaller && \
+RUN mkdir -p /syzkaller/gopath/src/github.com/ManhNDd/syzkaller && \
 	mkdir -p /syzkaller/.cache && \
 	chmod -R 0777 /syzkaller
 
 # The default Docker prompt is too ugly and takes the whole line:
-# I have no name!@0f3331d2fb54:~/gopath/src/github.com/google/syzkaller$
+# I have no name!@0f3331d2fb54:~/gopath/src/github.com/ManhNDd/syzkaller$
 RUN echo "export PS1='syz-env🈴 '" > /syzkaller/.bashrc
 ENV SYZ_ENV yes
 

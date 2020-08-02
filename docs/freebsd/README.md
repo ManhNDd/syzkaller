@@ -22,11 +22,11 @@ When using bhyve as the VM backend, a DHCP server must also be installed:
 ```
 To checkout the syzkaller sources, run:
 ```console
-$ go get -u -d github.com/google/syzkaller/prog
+$ go get -u -d github.com/ManhNDd/syzkaller/prog
 ```
 and the binaries can be built by running:
 ```console
-$ cd go/src/github.com/google/syzkaller/
+$ cd go/src/github.com/ManhNDd/syzkaller/
 $ gmake
 ```
 
@@ -130,7 +130,7 @@ If all of the above worked, create a `freebsd.cfg` configuration file with the f
 	"target": "freebsd/amd64",
 	"http": ":10000",
 	"workdir": "/workdir",
-	"syzkaller": "/gopath/src/github.com/google/syzkaller",
+	"syzkaller": "/gopath/src/github.com/ManhNDd/syzkaller",
 	"sshkey": "/freebsd_id_rsa",
 	"sandbox": "none",
 	"procs": 8,

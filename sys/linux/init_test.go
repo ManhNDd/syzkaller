@@ -6,8 +6,8 @@ package linux_test
 import (
 	"testing"
 
-	"github.com/google/syzkaller/prog"
-	_ "github.com/google/syzkaller/sys/linux/gen"
+	"github.com/ManhNDd/syzkaller/prog"
+	_ "github.com/ManhNDd/syzkaller/sys/linux/gen"
 )
 
 func TestNeutralize(t *testing.T) {

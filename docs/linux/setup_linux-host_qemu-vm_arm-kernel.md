@@ -119,7 +119,7 @@ Create manager config `arm.cfg` similar to the following one (changing paths as 
 	"http": ":12345",
 	"workdir": "/workdir",
 	"kernel_obj": "/linux",
-	"syzkaller": "/gopath/src/github.com/google/syzkaller",
+	"syzkaller": "/gopath/src/github.com/ManhNDd/syzkaller",
 	"image": "/buildroot/output/images/rootfs.ext2",
 	"sandbox": "none",
 	"reproduce": false,

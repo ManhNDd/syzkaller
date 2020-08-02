@@ -42,8 +42,8 @@ export PATH=$GOROOT/bin:$PATH
 To download and build `syzkaller`:
 
 ``` bash
-go get -u -d github.com/google/syzkaller/prog
-cd gopath/src/github.com/google/syzkaller/
+go get -u -d github.com/ManhNDd/syzkaller/prog
+cd gopath/src/github.com/ManhNDd/syzkaller/
 make
 ```
 

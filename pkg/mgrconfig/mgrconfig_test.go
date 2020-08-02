@@ -7,9 +7,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/google/syzkaller/pkg/config"
-	"github.com/google/syzkaller/vm/gce"
-	"github.com/google/syzkaller/vm/qemu"
+	"github.com/ManhNDd/syzkaller/pkg/config"
+	"github.com/ManhNDd/syzkaller/vm/gce"
+	"github.com/ManhNDd/syzkaller/vm/qemu"
 )
 
 func TestCanned(t *testing.T) {

@@ -19,7 +19,7 @@ import (
 	texttemplate "text/template"
 	"time"
 
-	"github.com/google/syzkaller/dashboard/dashapi"
+	"github.com/ManhNDd/syzkaller/dashboard/dashapi"
 )
 
 func CreatePage(page string) *template.Template {

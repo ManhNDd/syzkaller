@@ -19,7 +19,7 @@ import (
 	"path/filepath"
 	"sort"
 
-	"github.com/google/syzkaller/pkg/osutil"
+	"github.com/ManhNDd/syzkaller/pkg/osutil"
 )
 
 var (

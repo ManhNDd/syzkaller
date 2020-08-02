@@ -36,13 +36,13 @@ import (
 	"strings"
 	"unsafe"
 
-	"github.com/google/syzkaller/pkg/ast"
-	"github.com/google/syzkaller/pkg/cmdprof"
-	"github.com/google/syzkaller/pkg/compiler"
-	"github.com/google/syzkaller/pkg/osutil"
-	"github.com/google/syzkaller/pkg/symbolizer"
-	"github.com/google/syzkaller/prog"
-	"github.com/google/syzkaller/sys/targets"
+	"github.com/ManhNDd/syzkaller/pkg/ast"
+	"github.com/ManhNDd/syzkaller/pkg/cmdprof"
+	"github.com/ManhNDd/syzkaller/pkg/compiler"
+	"github.com/ManhNDd/syzkaller/pkg/osutil"
+	"github.com/ManhNDd/syzkaller/pkg/symbolizer"
+	"github.com/ManhNDd/syzkaller/prog"
+	"github.com/ManhNDd/syzkaller/sys/targets"
 )
 
 func main() {

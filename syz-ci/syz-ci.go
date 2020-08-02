@@ -63,10 +63,10 @@ import (
 	"regexp"
 	"sync"
 
-	"github.com/google/syzkaller/pkg/config"
-	"github.com/google/syzkaller/pkg/log"
-	"github.com/google/syzkaller/pkg/mgrconfig"
-	"github.com/google/syzkaller/pkg/osutil"
+	"github.com/ManhNDd/syzkaller/pkg/config"
+	"github.com/ManhNDd/syzkaller/pkg/log"
+	"github.com/ManhNDd/syzkaller/pkg/mgrconfig"
+	"github.com/ManhNDd/syzkaller/pkg/osutil"
 )
 
 var (
@@ -234,7 +234,7 @@ func serveHTTP(cfg *Config) {
 
 func loadConfig(filename string) (*Config, error) {
 	cfg := &Config{
-		SyzkallerRepo:   "https://github.com/google/syzkaller.git",
+		SyzkallerRepo:   "https://github.com/ManhNDd/syzkaller.git",
 		SyzkallerBranch: "master",
 		ManagerPort:     10000,
 		Goroot:          os.Getenv("GOROOT"),

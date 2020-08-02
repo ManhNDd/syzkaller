@@ -13,9 +13,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/google/syzkaller/pkg/cover"
-	"github.com/google/syzkaller/pkg/osutil"
-	"github.com/google/syzkaller/sys/targets"
+	"github.com/ManhNDd/syzkaller/pkg/cover"
+	"github.com/ManhNDd/syzkaller/pkg/osutil"
+	"github.com/ManhNDd/syzkaller/sys/targets"
 )
 
 var (

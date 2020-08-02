@@ -6,8 +6,8 @@ package openbsd_test
 import (
 	"testing"
 
-	"github.com/google/syzkaller/prog"
-	_ "github.com/google/syzkaller/sys/openbsd/gen"
+	"github.com/ManhNDd/syzkaller/prog"
+	_ "github.com/ManhNDd/syzkaller/sys/openbsd/gen"
 )
 
 func TestNeutralize(t *testing.T) {

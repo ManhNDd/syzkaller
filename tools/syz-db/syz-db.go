@@ -14,11 +14,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/google/syzkaller/pkg/db"
-	"github.com/google/syzkaller/pkg/hash"
-	"github.com/google/syzkaller/pkg/osutil"
-	"github.com/google/syzkaller/prog"
-	_ "github.com/google/syzkaller/sys"
+	"github.com/ManhNDd/syzkaller/pkg/db"
+	"github.com/ManhNDd/syzkaller/pkg/hash"
+	"github.com/ManhNDd/syzkaller/pkg/osutil"
+	"github.com/ManhNDd/syzkaller/prog"
+	_ "github.com/ManhNDd/syzkaller/sys"
 )
 
 func main() {

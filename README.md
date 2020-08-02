@@ -1,11 +1,11 @@
 # syzkaller - kernel fuzzer
 
-[![CI Status](https://github.com/google/syzkaller/workflows/ci/badge.svg)](https://github.com/google/syzkaller/actions?query=workflow/ci)
+[![CI Status](https://github.com/ManhNDd/syzkaller/workflows/ci/badge.svg)](https://github.com/ManhNDd/syzkaller/actions?query=workflow/ci)
 [![fuzzit](https://app.fuzzit.dev/badge?org_id=syzkaller=master)](https://fuzzit.dev)
 [![OSS-Fuzz](https://oss-fuzz-build-logs.storage.googleapis.com/badges/syzkaller.svg)](https://bugs.chromium.org/p/oss-fuzz/issues/list?q=label:Proj-syzkaller)
-[![Go Report Card](https://goreportcard.com/badge/github.com/google/syzkaller)](https://goreportcard.com/report/github.com/google/syzkaller)
+[![Go Report Card](https://goreportcard.com/badge/github.com/ManhNDd/syzkaller)](https://goreportcard.com/report/github.com/ManhNDd/syzkaller)
 [![Coverage Status](https://codecov.io/gh/google/syzkaller/graph/badge.svg)](https://codecov.io/gh/google/syzkaller)
-[![GoDoc](https://godoc.org/github.com/google/syzkaller?status.svg)](https://godoc.org/github.com/google/syzkaller)
+[![GoDoc](https://godoc.org/github.com/ManhNDd/syzkaller?status.svg)](https://godoc.org/github.com/ManhNDd/syzkaller)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 
 `syzkaller` (`[siːzˈkɔːlə]`) is an unsupervised coverage-guided kernel fuzzer.\

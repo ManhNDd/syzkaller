@@ -9,9 +9,9 @@ import (
 	"syscall"
 	"unsafe"
 
-	"github.com/google/syzkaller/pkg/osutil"
-	"github.com/google/syzkaller/prog"
-	"github.com/google/syzkaller/sys/linux"
+	"github.com/ManhNDd/syzkaller/pkg/osutil"
+	"github.com/ManhNDd/syzkaller/prog"
+	"github.com/ManhNDd/syzkaller/sys/linux"
 )
 
 func init() {

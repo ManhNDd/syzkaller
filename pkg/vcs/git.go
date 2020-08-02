@@ -16,9 +16,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/google/syzkaller/pkg/hash"
-	"github.com/google/syzkaller/pkg/log"
-	"github.com/google/syzkaller/pkg/osutil"
+	"github.com/ManhNDd/syzkaller/pkg/hash"
+	"github.com/ManhNDd/syzkaller/pkg/log"
+	"github.com/ManhNDd/syzkaller/pkg/osutil"
 )
 
 type git struct {

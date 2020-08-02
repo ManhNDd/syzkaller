@@ -184,11 +184,11 @@ variables `$GOPATH`, `$KERNEL` and `$IMAGE` with their actual values.
 {
 	"target": "linux/amd64",
 	"http": "127.0.0.1:56741",
-	"workdir": "$GOPATH/src/github.com/google/syzkaller/workdir",
+	"workdir": "$GOPATH/src/github.com/ManhNDd/syzkaller/workdir",
 	"kernel_obj": "$KERNEL",
 	"image": "$IMAGE/stretch.img",
 	"sshkey": "$IMAGE/stretch.id_rsa",
-	"syzkaller": "$GOPATH/src/github.com/google/syzkaller",
+	"syzkaller": "$GOPATH/src/github.com/ManhNDd/syzkaller",
 	"procs": 8,
 	"type": "qemu",
 	"vm": {

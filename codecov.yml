@@ -28,4 +28,4 @@ comment:
   after_n_builds: 2
 
 fixes:
-  - "gopath/src/github.com/google/syzkaller/::"
+  - "gopath/src/github.com/ManhNDd/syzkaller/::"

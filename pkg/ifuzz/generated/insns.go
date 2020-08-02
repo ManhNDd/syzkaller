@@ -4,7 +4,7 @@
 
 package generated
 
-import . "github.com/google/syzkaller/pkg/ifuzz"
+import . "github.com/ManhNDd/syzkaller/pkg/ifuzz"
 
 func init() { Insns = insns }
 

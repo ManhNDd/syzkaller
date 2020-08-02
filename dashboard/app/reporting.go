@@ -12,9 +12,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/google/syzkaller/dashboard/dashapi"
-	"github.com/google/syzkaller/pkg/email"
-	"github.com/google/syzkaller/pkg/html"
+	"github.com/ManhNDd/syzkaller/dashboard/dashapi"
+	"github.com/ManhNDd/syzkaller/pkg/email"
+	"github.com/ManhNDd/syzkaller/pkg/html"
 	"golang.org/x/net/context"
 	db "google.golang.org/appengine/datastore"
 	"google.golang.org/appengine/log"

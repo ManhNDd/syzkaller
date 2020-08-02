@@ -13,13 +13,13 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/google/syzkaller/pkg/cover"
-	"github.com/google/syzkaller/pkg/hash"
-	"github.com/google/syzkaller/pkg/ipc"
-	"github.com/google/syzkaller/pkg/log"
-	"github.com/google/syzkaller/pkg/rpctype"
-	"github.com/google/syzkaller/pkg/signal"
-	"github.com/google/syzkaller/prog"
+	"github.com/ManhNDd/syzkaller/pkg/cover"
+	"github.com/ManhNDd/syzkaller/pkg/hash"
+	"github.com/ManhNDd/syzkaller/pkg/ipc"
+	"github.com/ManhNDd/syzkaller/pkg/log"
+	"github.com/ManhNDd/syzkaller/pkg/rpctype"
+	"github.com/ManhNDd/syzkaller/pkg/signal"
+	"github.com/ManhNDd/syzkaller/prog"
 )
 
 // Proc represents a single fuzzing process (executor).

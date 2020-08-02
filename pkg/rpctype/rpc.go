@@ -12,7 +12,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/google/syzkaller/pkg/log"
+	"github.com/ManhNDd/syzkaller/pkg/log"
 )
 
 type RPCServer struct {

@@ -22,13 +22,13 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/google/syzkaller/pkg/config"
-	"github.com/google/syzkaller/pkg/gce"
-	"github.com/google/syzkaller/pkg/gcs"
-	"github.com/google/syzkaller/pkg/kd"
-	"github.com/google/syzkaller/pkg/log"
-	"github.com/google/syzkaller/pkg/osutil"
-	"github.com/google/syzkaller/vm/vmimpl"
+	"github.com/ManhNDd/syzkaller/pkg/config"
+	"github.com/ManhNDd/syzkaller/pkg/gce"
+	"github.com/ManhNDd/syzkaller/pkg/gcs"
+	"github.com/ManhNDd/syzkaller/pkg/kd"
+	"github.com/ManhNDd/syzkaller/pkg/log"
+	"github.com/ManhNDd/syzkaller/pkg/osutil"
+	"github.com/ManhNDd/syzkaller/vm/vmimpl"
 )
 
 func init() {

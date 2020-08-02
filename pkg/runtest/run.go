@@ -24,12 +24,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/google/syzkaller/pkg/csource"
-	"github.com/google/syzkaller/pkg/host"
-	"github.com/google/syzkaller/pkg/ipc"
-	"github.com/google/syzkaller/pkg/osutil"
-	"github.com/google/syzkaller/prog"
-	"github.com/google/syzkaller/sys/targets"
+	"github.com/ManhNDd/syzkaller/pkg/csource"
+	"github.com/ManhNDd/syzkaller/pkg/host"
+	"github.com/ManhNDd/syzkaller/pkg/ipc"
+	"github.com/ManhNDd/syzkaller/pkg/osutil"
+	"github.com/ManhNDd/syzkaller/prog"
+	"github.com/ManhNDd/syzkaller/sys/targets"
 )
 
 type RunRequest struct {

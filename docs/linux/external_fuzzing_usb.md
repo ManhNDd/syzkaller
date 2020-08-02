@@ -185,8 +185,8 @@ These instructions describe how to set this up on a Raspberry Pi Zero W, but any
     ```
 
     ``` bash
-    go get -u -d github.com/google/syzkaller/prog
-    cd ~/gopath/src/github.com/google/syzkaller
+    go get -u -d github.com/ManhNDd/syzkaller/prog
+    cd ~/gopath/src/github.com/ManhNDd/syzkaller
     # Put the patch above into ./syzkaller.patch
     git apply ./syzkaller.patch
     make executor

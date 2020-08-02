@@ -8,9 +8,9 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/google/syzkaller/pkg/hash"
-	"github.com/google/syzkaller/pkg/signal"
-	"github.com/google/syzkaller/prog"
+	"github.com/ManhNDd/syzkaller/pkg/hash"
+	"github.com/ManhNDd/syzkaller/pkg/signal"
+	"github.com/ManhNDd/syzkaller/prog"
 )
 
 type InputTest struct {

@@ -16,8 +16,8 @@ import (
 	"os/exec"
 	"time"
 
-	"github.com/google/syzkaller/pkg/log"
-	"github.com/google/syzkaller/pkg/osutil"
+	"github.com/ManhNDd/syzkaller/pkg/log"
+	"github.com/ManhNDd/syzkaller/pkg/osutil"
 )
 
 // Pool represents a set of test machines (VMs, physical devices, etc) of particular type.

@@ -16,10 +16,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/google/syzkaller/pkg/osutil"
-	"github.com/google/syzkaller/prog"
-	_ "github.com/google/syzkaller/sys"
-	"github.com/google/syzkaller/sys/targets"
+	"github.com/ManhNDd/syzkaller/pkg/osutil"
+	"github.com/ManhNDd/syzkaller/prog"
+	_ "github.com/ManhNDd/syzkaller/sys"
+	"github.com/ManhNDd/syzkaller/sys/targets"
 )
 
 func TestGenerate(t *testing.T) {

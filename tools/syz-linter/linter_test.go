@@ -6,7 +6,7 @@ package main
 import (
 	"testing"
 
-	"github.com/google/syzkaller/pkg/osutil"
+	"github.com/ManhNDd/syzkaller/pkg/osutil"
 	"golang.org/x/tools/go/analysis/analysistest"
 )
 

@@ -18,8 +18,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/google/syzkaller/pkg/osutil"
-	"github.com/google/syzkaller/prog"
+	"github.com/ManhNDd/syzkaller/pkg/osutil"
+	"github.com/ManhNDd/syzkaller/prog"
 )
 
 type linux struct {

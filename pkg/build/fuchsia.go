@@ -10,13 +10,13 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/google/syzkaller/pkg/osutil"
-	"github.com/google/syzkaller/sys/targets"
+	"github.com/ManhNDd/syzkaller/pkg/osutil"
+	"github.com/ManhNDd/syzkaller/sys/targets"
 )
 
 type fuchsia struct{}
 
-// syzRoot returns $GOPATH/src/github.com/google/syzkaller.
+// syzRoot returns $GOPATH/src/github.com/ManhNDd/syzkaller.
 func syzRoot() (string, error) {
 	_, selfPath, _, ok := runtime.Caller(0)
 	if !ok {

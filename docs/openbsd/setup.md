@@ -31,8 +31,8 @@ Variables used throughout the instructions:
 2. Clone repository:
 
    ```sh
-   $ go get -u -d github.com/google/syzkaller/prog
-   $ cd ~/go/src/github.com/google/syzkaller
+   $ go get -u -d github.com/ManhNDd/syzkaller/prog
+   $ cd ~/go/src/github.com/ManhNDd/syzkaller
    $ gmake all
    ```
 
@@ -114,16 +114,16 @@ $ make -C compile/SYZKALLER
 
 ```sh
 $ pwd
-~/go/src/github.com/google/syzkaller
+~/go/src/github.com/ManhNDd/syzkaller
 $ cat openbsd.cfg
 {
   "name": "openbsd",
   "target": "openbsd/amd64",
   "http": ":10000",
-  "workdir": "$HOME/go/src/github.com/google/syzkaller/workdir",
+  "workdir": "$HOME/go/src/github.com/ManhNDd/syzkaller/workdir",
   "kernel_obj": "/sys/arch/amd64/compile/SYZKALLER/obj",
   "kernel_src": "/",
-  "syzkaller": "$HOME/go/src/github.com/google/syzkaller",
+  "syzkaller": "$HOME/go/src/github.com/ManhNDd/syzkaller",
   "image": "$VMIMG",
   "sshkey": "$SSHKEY",
   "sandbox": "none",

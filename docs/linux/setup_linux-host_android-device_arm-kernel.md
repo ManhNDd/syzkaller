@@ -50,9 +50,9 @@ Create a manager config `android.cfg`:
 {
 	"target": "linux/arm",
 	"http": "127.0.0.1:56741",
-	"workdir": "$GOPATH/src/github.com/google/syzkaller/workdir",
+	"workdir": "$GOPATH/src/github.com/ManhNDd/syzkaller/workdir",
 	"kernel_obj": "$KERNEL",
-	"syzkaller": "$GOPATH/src/github.com/google/syzkaller",
+	"syzkaller": "$GOPATH/src/github.com/ManhNDd/syzkaller",
 	"sandbox": none,
 	"procs": 1,
 	"type": "adb",

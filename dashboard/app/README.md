@@ -26,12 +26,12 @@ The app can be deployed with `gcloud app deploy/update`, refer to the docs for m
 
 The app tests can be run with:
 ```
-go test github.com/google/syzkaller/dashboard/app
+go test github.com/ManhNDd/syzkaller/dashboard/app
 ```
 During development it's handy to use `-short` flag to not run the longest tests.
 
 If any of the tests fail, use `-v` flag to see log of what happens and `-run` flag
 to run a single test, e.g.:
 ```
-go test -short -v -run=TestEmailReport github.com/google/syzkaller/dashboard/app
+go test -short -v -run=TestEmailReport github.com/ManhNDd/syzkaller/dashboard/app
 ```

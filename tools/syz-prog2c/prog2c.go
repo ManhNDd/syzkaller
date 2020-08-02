@@ -11,9 +11,9 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/google/syzkaller/pkg/csource"
-	"github.com/google/syzkaller/prog"
-	_ "github.com/google/syzkaller/sys"
+	"github.com/ManhNDd/syzkaller/pkg/csource"
+	"github.com/ManhNDd/syzkaller/prog"
+	_ "github.com/ManhNDd/syzkaller/sys"
 )
 
 var (

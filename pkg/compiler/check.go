@@ -10,9 +10,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/google/syzkaller/pkg/ast"
-	"github.com/google/syzkaller/prog"
-	"github.com/google/syzkaller/sys/targets"
+	"github.com/ManhNDd/syzkaller/pkg/ast"
+	"github.com/ManhNDd/syzkaller/prog"
+	"github.com/ManhNDd/syzkaller/sys/targets"
 )
 
 func (comp *compiler) typecheck() {

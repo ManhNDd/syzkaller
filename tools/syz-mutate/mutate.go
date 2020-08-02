@@ -14,10 +14,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/google/syzkaller/pkg/db"
-	"github.com/google/syzkaller/pkg/mgrconfig"
-	"github.com/google/syzkaller/prog"
-	_ "github.com/google/syzkaller/sys"
+	"github.com/ManhNDd/syzkaller/pkg/db"
+	"github.com/ManhNDd/syzkaller/pkg/mgrconfig"
+	"github.com/ManhNDd/syzkaller/prog"
+	_ "github.com/ManhNDd/syzkaller/sys"
 )
 
 var (

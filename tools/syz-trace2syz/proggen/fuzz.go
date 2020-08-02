@@ -6,8 +6,8 @@
 package proggen
 
 import (
-	"github.com/google/syzkaller/prog"
-	_ "github.com/google/syzkaller/sys/linux/gen" // pull in the target
+	"github.com/ManhNDd/syzkaller/prog"
+	_ "github.com/ManhNDd/syzkaller/sys/linux/gen" // pull in the target
 )
 
 var linuxTarget = func() *prog.Target {

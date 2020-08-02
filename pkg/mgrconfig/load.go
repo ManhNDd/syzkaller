@@ -10,11 +10,11 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/google/syzkaller/pkg/config"
-	"github.com/google/syzkaller/pkg/osutil"
-	"github.com/google/syzkaller/prog"
-	_ "github.com/google/syzkaller/sys" // most mgrconfig users want targets too
-	"github.com/google/syzkaller/sys/targets"
+	"github.com/ManhNDd/syzkaller/pkg/config"
+	"github.com/ManhNDd/syzkaller/pkg/osutil"
+	"github.com/ManhNDd/syzkaller/prog"
+	_ "github.com/ManhNDd/syzkaller/sys" // most mgrconfig users want targets too
+	"github.com/ManhNDd/syzkaller/sys/targets"
 )
 
 func LoadData(data []byte) (*Config, error) {

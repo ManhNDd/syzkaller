@@ -10,7 +10,7 @@ import (
     "encoding/hex"
     "strconv"
     "strings"
-    "github.com/google/syzkaller/pkg/log"
+    "github.com/ManhNDd/syzkaller/pkg/log"
 )
 
 %%{

@@ -13,9 +13,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/google/syzkaller/pkg/osutil"
-	"github.com/google/syzkaller/pkg/symbolizer"
-	"github.com/google/syzkaller/pkg/vcs"
+	"github.com/ManhNDd/syzkaller/pkg/osutil"
+	"github.com/ManhNDd/syzkaller/pkg/symbolizer"
+	"github.com/ManhNDd/syzkaller/pkg/vcs"
 )
 
 type linux struct {

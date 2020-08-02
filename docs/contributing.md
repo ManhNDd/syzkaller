@@ -6,7 +6,7 @@ If you want to contribute to the project, feel free to send a pull request follo
 
 Extending/improving [system call descriptions](syscall_descriptions.md) is always a good idea.
 
-Unassigned issues from the [bug tracker](https://github.com/google/syzkaller/issues) are worth doing, but some of them might be complicated.
+Unassigned issues from the [bug tracker](https://github.com/ManhNDd/syzkaller/issues) are worth doing, but some of them might be complicated.
 
 To contribute code or syscall descriptions, at the very least you need to be able to build and run syzkaller, see the instructions [here](/docs/setup.md).
 
@@ -32,7 +32,7 @@ the problem you are solving and how it is solved.
 ```
 
 `dir/path` is a relative path to the main dir this commit changes
-(look at examples in the [commit history](https://github.com/google/syzkaller/commits/master)).
+(look at examples in the [commit history](https://github.com/ManhNDd/syzkaller/commits/master)).
 If several packages/dirs are significantly affected, then the following format is allowed:
 ```
 dir1/path1, dir2/path2: one-line description
@@ -71,17 +71,17 @@ in the same commit.
 ### How to create a pull request on Github
 
 - First, you need an own git fork of syzkaller repository. Nagivate to
-[github.com/google/syzkaller](https://github.com/google/syzkaller) and press `Fork` button in the top-right corner of
+[github.com/ManhNDd/syzkaller](https://github.com/ManhNDd/syzkaller) and press `Fork` button in the top-right corner of
 the page. This will create `https://github.com/YOUR_GITHUB_USERNAME/syzkaller` repository.
 
 - Checkout main syzkaller repository if you have not already. To work with `go` command the checkout must be under
-`$GOPATH`. The simplest way to do it is to run `go get -u -d github.com/google/syzkaller/prog`, this will checkout
-the repository in `$GOPATH/src/github.com/google/syzkaller`.
+`$GOPATH`. The simplest way to do it is to run `go get -u -d github.com/ManhNDd/syzkaller/prog`, this will checkout
+the repository in `$GOPATH/src/github.com/ManhNDd/syzkaller`.
 - Remember to `export PATH=$GOPATH/bin:$PATH` if you have not already.
 - Then add your repository as an additional origin:
 
     ```shell
-    cd $GOPATH/src/github.com/google/syzkaller
+    cd $GOPATH/src/github.com/ManhNDd/syzkaller
     git remote add my-origin https://github.com/YOUR_GITHUB_USERNAME/syzkaller.git
     git fetch my-origin
     git checkout -b my-branch my-origin/master
@@ -93,8 +93,8 @@ This adds git origin `my-origin` with your repository and checks out new branch 
 - Commit changes locally. For this you need to run `git add` for all changed files, e.g. `git add sys/linux/sys.txt`. You can run `git status` to see what files were changed/created. When all files are added (`git status` shows no files in `Changes not staged for commit` section and no relevant files in `Untracked files` section), run `git commit` and enter commit description in your editor.
 - Run tests locally (`make install_prerequisites` followed by `make presubmit`).
 - Push the commit to your fork on github with `git push my-origin my-branch`.
-- Nagivate to [github.com/google/syzkaller](https://github.com/google/syzkaller) and you should see green `Compare & pull request` button, press it. Then press `Create pull request`. Now your pull request should show up on [pull requests page](https://github.com/google/syzkaller/pulls).
-- If you don't see `Create pull request` button for any reason, you can create pull request manually. For that nagivate to [pull requests page](https://github.com/google/syzkaller/pulls), press `New pull request`, then `compare across forks` and choose `google/syzkaller`/`master` as base and `YOUR_GITHUB_USERNAME/syzkaller`/`my-branch` as compare and press `Create pull request`.
+- Nagivate to [github.com/ManhNDd/syzkaller](https://github.com/ManhNDd/syzkaller) and you should see green `Compare & pull request` button, press it. Then press `Create pull request`. Now your pull request should show up on [pull requests page](https://github.com/ManhNDd/syzkaller/pulls).
+- If you don't see `Create pull request` button for any reason, you can create pull request manually. For that nagivate to [pull requests page](https://github.com/ManhNDd/syzkaller/pulls), press `New pull request`, then `compare across forks` and choose `google/syzkaller`/`master` as base and `YOUR_GITHUB_USERNAME/syzkaller`/`my-branch` as compare and press `Create pull request`.
 - If you decided to rebase commits in `my-branch` (e.g. to rebase them onto updated master) after you created a pull-request, you will need to do a force push: `git push -f my-origin my-branch`.
 
 ### Using syz-env
@@ -108,7 +108,7 @@ Docker (Googlers see go/docker).
 
 It's recommended to create an alias for `syz-env` script:
 ```
-alias syz-env="$(go env GOPATH)/src/github.com/google/syzkaller/tools/syz-env"
+alias syz-env="$(go env GOPATH)/src/github.com/ManhNDd/syzkaller/tools/syz-env"
 ```
 Then it can be used to wrap almost any make invocation as:
 ```

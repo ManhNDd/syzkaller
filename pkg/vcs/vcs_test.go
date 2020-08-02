@@ -100,14 +100,14 @@ func TestCommitLink(t *testing.T) {
 	}
 	tests := []Test{
 		{
-			"https://github.com/google/syzkaller",
+			"https://github.com/ManhNDd/syzkaller",
 			"76dd003f1b102b791d8b342a1f92a6486ff56a1e",
-			"https://github.com/google/syzkaller/commit/76dd003f1b102b791d8b342a1f92a6486ff56a1e",
+			"https://github.com/ManhNDd/syzkaller/commit/76dd003f1b102b791d8b342a1f92a6486ff56a1e",
 		},
 		{
-			"https://github.com/google/syzkaller.git",
+			"https://github.com/ManhNDd/syzkaller.git",
 			"76dd003f1b",
-			"https://github.com/google/syzkaller/commit/76dd003f1b",
+			"https://github.com/ManhNDd/syzkaller/commit/76dd003f1b",
 		},
 		{
 			"https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git",

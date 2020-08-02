@@ -12,7 +12,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/google/syzkaller/dashboard/dashapi"
+	"github.com/ManhNDd/syzkaller/dashboard/dashapi"
 	"google.golang.org/appengine/user"
 )
 
@@ -65,7 +65,7 @@ var testConfig = &GlobalConfig{
 					Maintainers: []string{"maintainers@repo10.org", "bugs@repo10.org"},
 				},
 				{
-					URL:         "git://github.com/google/syzkaller",
+					URL:         "git://github.com/ManhNDd/syzkaller",
 					Branch:      "master",
 					Alias:       "repo10alias",
 					Maintainers: []string{"maintainers@repo10.org", "bugs@repo10.org"},

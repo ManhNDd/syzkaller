@@ -20,13 +20,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/google/syzkaller/pkg/cover"
-	"github.com/google/syzkaller/pkg/html"
-	"github.com/google/syzkaller/pkg/log"
-	"github.com/google/syzkaller/pkg/osutil"
-	"github.com/google/syzkaller/pkg/signal"
-	"github.com/google/syzkaller/pkg/vcs"
-	"github.com/google/syzkaller/prog"
+	"github.com/ManhNDd/syzkaller/pkg/cover"
+	"github.com/ManhNDd/syzkaller/pkg/html"
+	"github.com/ManhNDd/syzkaller/pkg/log"
+	"github.com/ManhNDd/syzkaller/pkg/osutil"
+	"github.com/ManhNDd/syzkaller/pkg/signal"
+	"github.com/ManhNDd/syzkaller/pkg/vcs"
+	"github.com/ManhNDd/syzkaller/prog"
 )
 
 func (mgr *Manager) initHTTP() {

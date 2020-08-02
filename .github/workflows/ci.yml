@@ -14,7 +14,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
         with:
-          path: gopath/src/github.com/google/syzkaller
+          path: gopath/src/github.com/ManhNDd/syzkaller
           # This is needed for tools/check-commits.sh
           ref: ${{ github.event.pull_request.head.sha }}
           fetch-depth: 100
@@ -30,13 +30,13 @@ jobs:
       - name: run
         env:
           GITHUB_PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
-        run: gopath/src/github.com/google/syzkaller/.github/workflows/run.sh syz-env make presubmit_smoke
+        run: gopath/src/github.com/ManhNDd/syzkaller/.github/workflows/run.sh syz-env make presubmit_smoke
       # Upload coverage report to codecov.io. For reference see:
       # https://github.com/codecov/codecov-action/blob/master/README.md
       - name: codecov
         uses: codecov/codecov-action@v1
         with:
-          file: gopath/src/github.com/google/syzkaller/.coverage.txt
+          file: gopath/src/github.com/ManhNDd/syzkaller/.coverage.txt
           flags: unittests
   dashboard:
     runs-on: ubuntu-latest
@@ -45,18 +45,18 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
         with:
-          path: gopath/src/github.com/google/syzkaller
+          path: gopath/src/github.com/ManhNDd/syzkaller
       - name: cache
         uses: actions/cache@v1
         with:
           path: .cache
           key: cache
       - name: run
-        run: gopath/src/github.com/google/syzkaller/.github/workflows/run.sh syz-big-env make presubmit_big
+        run: gopath/src/github.com/ManhNDd/syzkaller/.github/workflows/run.sh syz-big-env make presubmit_big
       - name: codecov
         uses: codecov/codecov-action@v1
         with:
-          file: gopath/src/github.com/google/syzkaller/.coverage.txt
+          file: gopath/src/github.com/ManhNDd/syzkaller/.coverage.txt
           flags: dashboard
   arch:
     runs-on: ubuntu-latest
@@ -65,14 +65,14 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
         with:
-          path: gopath/src/github.com/google/syzkaller
+          path: gopath/src/github.com/ManhNDd/syzkaller
       - name: cache
         uses: actions/cache@v1
         with:
           path: .cache
           key: cache
       - name: run
-        run: gopath/src/github.com/google/syzkaller/.github/workflows/run.sh syz-big-env make presubmit_arch
+        run: gopath/src/github.com/ManhNDd/syzkaller/.github/workflows/run.sh syz-big-env make presubmit_arch
   race:
     runs-on: ubuntu-latest
     needs: [smoke]
@@ -80,14 +80,14 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
         with:
-          path: gopath/src/github.com/google/syzkaller
+          path: gopath/src/github.com/ManhNDd/syzkaller
       - name: cache
         uses: actions/cache@v1
         with:
           path: .cache
           key: cache
       - name: run
-        run: gopath/src/github.com/google/syzkaller/.github/workflows/run.sh syz-env make presubmit_race
+        run: gopath/src/github.com/ManhNDd/syzkaller/.github/workflows/run.sh syz-env make presubmit_race
   fuzzit:
     runs-on: ubuntu-latest
     needs: [smoke]
@@ -95,7 +95,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
         with:
-          path: gopath/src/github.com/google/syzkaller
+          path: gopath/src/github.com/ManhNDd/syzkaller
       - name: cache
         uses: actions/cache@v1
         with:
@@ -103,9 +103,9 @@ jobs:
           key: cache
       - name: regression
         if: ${{ github.event_name == 'pull_request' }}
-        run: gopath/src/github.com/google/syzkaller/.github/workflows/run.sh syz-env tools/fuzzit.sh local-regression
+        run: gopath/src/github.com/ManhNDd/syzkaller/.github/workflows/run.sh syz-env tools/fuzzit.sh local-regression
       - name: fuzzing
         if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
         env:
           FUZZIT_API_KEY: ${{ secrets.FUZZIT_API_KEY }}
-        run: gopath/src/github.com/google/syzkaller/.github/workflows/run.sh syz-env tools/fuzzit.sh fuzzing
+        run: gopath/src/github.com/ManhNDd/syzkaller/.github/workflows/run.sh syz-env tools/fuzzit.sh fuzzing

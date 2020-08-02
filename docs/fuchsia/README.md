@@ -124,7 +124,7 @@ To run `syz-ci` locally for Fuchsia, you need:
 	"name": "testci",
 	"http": ":50000",
 	"manager_port_start": 50001,
-	"syzkaller_repo": "https://github.com/google/syzkaller.git",
+	"syzkaller_repo": "https://github.com/ManhNDd/syzkaller.git",
 	"managers": [
 		{
 			"name": "fuchsia",

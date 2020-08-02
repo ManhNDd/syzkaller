@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/google/syzkaller/pkg/log"
-	"github.com/google/syzkaller/pkg/osutil"
+	"github.com/ManhNDd/syzkaller/pkg/log"
+	"github.com/ManhNDd/syzkaller/pkg/osutil"
 )
 
 // Sleep for d.

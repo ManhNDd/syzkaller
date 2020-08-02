@@ -9,9 +9,9 @@ import (
 	"reflect"
 	"sort"
 
-	"github.com/google/syzkaller/pkg/ast"
-	"github.com/google/syzkaller/pkg/serializer"
-	"github.com/google/syzkaller/prog"
+	"github.com/ManhNDd/syzkaller/pkg/ast"
+	"github.com/ManhNDd/syzkaller/pkg/serializer"
+	"github.com/ManhNDd/syzkaller/prog"
 )
 
 const sizeUnassigned = ^uint64(0)

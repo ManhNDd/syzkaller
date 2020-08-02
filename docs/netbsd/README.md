@@ -30,8 +30,8 @@ At this point you should have a NetBSD distribution in `$HOME/netbsd/dest`.
 
 2. Clone the syzkaller repository.
 	```sh
-	host$ go get -u -d github.com/google/syzkaller/prog
-	host$ cd ~/go/src/github.com/google/syzkaller
+	host$ go get -u -d github.com/ManhNDd/syzkaller/prog
+	host$ cd ~/go/src/github.com/ManhNDd/syzkaller
 	```
 
 3. Compile syzkaller for NetBSD.
@@ -134,7 +134,7 @@ You can compile a kernel with KASAN to increase the chances of finding bugs.
 		"target": "netbsd/amd64",
 		"http": ":10000",
 		"workdir": "work",
-		"syzkaller": "$GOPATH/src/github.com/google/syzkaller",
+		"syzkaller": "$GOPATH/src/github.com/ManhNDd/syzkaller",
 		"image": "path/to/netbsd.img",
 		"sshkey": "/path/to/netbsdkey",
 		"sandbox": "none",

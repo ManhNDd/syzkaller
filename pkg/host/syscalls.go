@@ -4,8 +4,8 @@
 package host
 
 import (
-	"github.com/google/syzkaller/pkg/log"
-	"github.com/google/syzkaller/prog"
+	"github.com/ManhNDd/syzkaller/pkg/log"
+	"github.com/ManhNDd/syzkaller/prog"
 )
 
 // DetectSupportedSyscalls returns list on supported and unsupported syscalls on the host.
