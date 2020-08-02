@@ -19,12 +19,14 @@ var (
 	flagSandbox  = flag.String("sandbox", "none", "sandbox for fuzzing (none/setuid/namespace/android)")
 	flagDebug    = flag.Bool("debug", false, "debug output from executor")
 	flagTimeout  = flag.Duration("timeout", 0, "execution timeout")
+	flagHandshakeTimeout = flag.Duration("handshaketimeout", 60000000000, "handshake timeout")
 )
 
 func Default(target *prog.Target) (*ipc.Config, *ipc.ExecOpts, error) {
 	c := &ipc.Config{
 		Executor: *flagExecutor,
 		Timeout:  *flagTimeout,
+		HandshakeTimeout: *flagHandshakeTimeout,
 	}
 	if *flagSignal {
 		c.Flags |= ipc.FlagSignal

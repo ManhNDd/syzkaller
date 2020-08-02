@@ -74,6 +74,9 @@ type Config struct {
 
 	// Timeout is the execution timeout for a single program.
 	Timeout time.Duration
+
+	// Timeout for handshake
+	HandshakeTimeout time.Duration
 }
 
 type CallFlags uint32
@@ -680,7 +683,7 @@ func (c *command) handshake() error {
 		read <- nil
 	}()
 	// Sandbox setup can take significant time.
-	timeout := time.NewTimer(time.Minute)
+	timeout := time.NewTimer(c.config.HandshakeTimeout)
 	select {
 	case err := <-read:
 		timeout.Stop()
