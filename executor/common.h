@@ -623,7 +623,9 @@ static void loop(void)
 				last_executed = now;
 			}
 			// TODO: adjust timeout for progs with syz_usb_connect call.
+#if !defined(SYZ_EXECUTOR_DEBUG)
 			if ((now - start < 5 * 1000) && (now - start < 3 * 1000 || now - last_executed < 1000))
+#endif
 				continue;
 #else
 			if (current_time_ms() - start < 5 * 1000)

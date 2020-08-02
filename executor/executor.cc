@@ -344,6 +344,13 @@ static void setup_features(char** enable, int n);
 
 int main(int argc, char** argv)
 {
+#if SYZ_EXECUTOR_DEBUG
+	if (argc == 1) {
+		while (access("/tmp/executor-debugging", F_OK) == 0) {
+			sleep(1);
+		}
+	}
+#endif
 	if (argc == 2 && strcmp(argv[1], "version") == 0) {
 		puts(GOOS " " GOARCH " " SYZ_REVISION " " GIT_REVISION);
 		return 0;
