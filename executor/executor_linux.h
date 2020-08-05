@@ -85,6 +85,9 @@ static intptr_t execute_syscall(const call_t* c, intptr_t a[kMaxArgs])
 	if (!strncmp(c->name, "custom_func", 11)) {
 		return execute_custom_func(c, a);
 	}
+	if (!strncmp(c->name, "prctl$custom_func", 17)) {
+		return execute_custom_func(c, a);
+	}
 	if (c->call)
 		return c->call(a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8]);
 	intptr_t res = syscall(c->sys_nr, a[0], a[1], a[2], a[3], a[4], a[5]);

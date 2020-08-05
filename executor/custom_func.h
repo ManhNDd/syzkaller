@@ -21,7 +21,14 @@ const custom_func_t custom_funcs[] = {
 	[CFMAKERAW] = (custom_func_t)cfmakeraw,
 };
 
-static intptr_t execute_custom_func(const call_t* c, intptr_t a[kMaxArgs])
+static intptr_t execute_custom_func_old(const call_t* c, intptr_t a[kMaxArgs])
 {
 	return custom_funcs[c->sys_nr - CUSTOM_FUNC_NR_OFFSET](a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8]);
+}
+
+static intptr_t execute_custom_func(const call_t* c, intptr_t a[kMaxArgs])
+{
+	// len("prctl$custom_func_") = 18
+	int offset = atoi(c->name+18);
+	return custom_funcs[offset](a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8]);
 }
